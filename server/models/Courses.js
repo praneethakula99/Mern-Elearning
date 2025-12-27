@@ -18,22 +18,8 @@ const schema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  duration: {
-    type: Number,
-    required: true,
-  },
-  category: {
-    type: String,
-    required: true,
-  },
-  createdBy: {
-    type: String,
-    required: true,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
+ 
+
 });
 
 export const Courses = mongoose.model("Courses", schema);
